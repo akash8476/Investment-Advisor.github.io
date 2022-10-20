@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: black;
+}
+
+#navbar logo {
+    margin: 34px 34px;
+    padding: 34px 34px;
+}
+
+#navbar img {
+    margin: 2px 5px;
+    padding: 0px 26px;
+    height: 57px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 7px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin: 34px;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: #0114ff;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+/* utility */
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    padding: 5px 34px;
+
+}
+
+#home {
+    padding: 3px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+}
+
+#home::before {
+    content: "";
+    background: url(home.png.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .9;
+    top: 0;
+    left: 0;
+}
+
+#home h1 {
+    font-size: 3rem;
+    padding: 6px 20px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#home p {
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+    color: white;
+    background-color: #0114ff;
+    padding: 5px 10px;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 34px;
+}
+
+.btn:hover {
+    color: rgb(7, 7, 7);
+    background-color: rgb(6, 240, 6);
+}
+
+#services {
+    display: flex;
+}
+
+#services .box {
+    box-shadow: 4px 1px 12px -1px;
+    border: 2px solid black;
+    margin: 9px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#services .box:hover {
+    background-color: #0cf32b;
+}
+
+#services .box img {
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+#clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img {
+    height: 160px;
+}
+
+.client-item {
+    padding: 55px;
+}
+
+/* #client-section::before{
+    content: "";
+    background-color: blue;
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .3;    */
+
+
+#client-section {
+    padding-top: 20px;
+}
+
+footer {
+    background-color: black;
+    padding: 9px 20px;
+    color: rgb(253, 255, 255);
+}
+
+#contact::before {
+    content: "";
+    background: url(melinda-gimpel-5Ne6mMQtIdo-unsplash.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 106%;
+    z-index: -1;
+    opacity: .8;
+    top: 0;
+    left: 0;
+
+}
+
+#contact {
+    position: relative;
+    margin-bottom: 9px;
+}
+
+#contact-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+#contact-box p {
+    color: #efd5d5;
+    size: 3rem;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.request-call-image {
+    height: 10px;
+    margin: 5px 20px;
+    padding: 5px;
+
+}
+
+.request-call-container {
+    display: flex;
+}
+
+.request-call-container img {
+    margin: 6px 6px;
+    padding: 7px 6px;
+    height: 1px;
+}
+
+.request-call-text a {
+    color: white;
+    font-size: 2re;
+
+}
+
+#call {
+    margin: 5px -53px;
+    padding: 3px 14px;
+}
+
+#call img {
+    margin: -20px 20px;
+    padding: 4px 29px;
+    height: 43px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.change_content:after {
+    content: "";
+    animation: pulse 10s infinite linear;
+    color: #0114ff;
+}
+
+@keyframes pulse {
+    0% {
+        content: "Smart investments";
+    }
+
+    50% {
+        content: "Costumised investments";
+    }
+
+}
+
+#services-container {
+    background-color: #0114ff;
+}
+
+#services-container {
+    margin-top: 22px;
+}
+
+.container-p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.chart-main-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 0;
+    background-color: #08054E;
+
+}
+
+
+.chart-main-container .col {
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: 0px;
+    left: 20%;
+
+}
+
+.chart-main-container .percentage1 {
+    font-family: 'Georama', sansderif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #2856F0;
+
+}
+
+.chart-main-container span {
+    font-size: 28px;
+}
+
+.chart-main-container .text {
+    font-family: 'Roboto', sansderif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+.chart-main-container .horizontal-line {
+    width: 60px;
+    height: 20px;
+    border-bottom: 2px solid gray;
+}
+
+.chart-main-container .percentage2 {
+    font-family: 'Roboto', sansderif;
+    font-size: 20px;
+    font-weight: 200;
+    color: #FF9505;
+    margin: 10px 0;
+}
+
+.chart-main-container .chart-main {
+    width: 580px;
+    height: auto;
+    position: relative;
+    top: -415px;
+    left: 48%;
+}
+
+.chart-main-container .chart-main img {
+    width: 90%;
+    height: auto;
+    top: 261px;
+    position: relative;
+}
+
+
+.chart-text {
+    font-family: 'Roboto';
+    font-size: 28px;
+}

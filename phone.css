@@ -1,0 +1,101 @@
+#services {
+    flex-direction: column;
+}
+
+#clients {
+    overflow: hidden;
+}
+
+#navbar {
+    flex-direction: column;
+}
+
+#home {
+    height: 300px;
+}
+
+#home::before {
+    height: 400px;
+}
+
+#home p {
+    font-size: 12px;
+}
+
+#navbar ul li a {
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+#home h1 {
+    font-size: 26px;
+}
+
+#navbar img {
+    height: 46px;
+}
+
+.btn {
+    margin-top: 0;
+    font-size: 10px;
+    padding: 0px 9px;
+}
+
+.box {
+    width: 300px;
+}
+
+#services {
+    align-items: center;
+    justify-content: center;
+}
+
+#contact {
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+#contact::before {
+    content: "";
+    background: url(/home/melinda-gimpel-5Ne6mMQtIdo-unsplash.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+
+
+}
+
+#client-section::before {
+    background-color: blue;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+
+
+}
+
+.client-item {
+    padding: 25px;
+}
+
+#clients img {
+    height: 50px
+}
+
+#contact {
+    margin-top: 12%;
+}
+
+.chart-main-container {
+    height: 333px;
+}
+
+.chart-main-container .chart-main img {
+    width: 51%;
+    height: auto;
+    top: 404px;
+    position: absolute;
+    margin: 19px 138px 119px -145px;
+}
